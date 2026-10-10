@@ -70,7 +70,7 @@ const Dashboard = () => {
   }, []);
 
   return (
-    <div className='min-h-screen bg-gray-50'>
+    <div className='min-h-screen bg-black/80'>
 
       <Navbar/>
 
@@ -87,11 +87,11 @@ const Dashboard = () => {
 
             <div>
 
-              <h1 className='text-2xl font-bold text-gray-900'>
+              <h1 className='text-2xl font-bold text-white'>
                 My Notes
               </h1>
 
-              <p className='mt-1 text-sm text-gray-500'>
+              <p className='mt-1 text-sm text-white/75'>
                 Keep your thoughts organized.
               </p>
 

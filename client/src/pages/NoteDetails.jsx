@@ -6,7 +6,7 @@ import { getNoteById } from '../services/noteService';
 import EditNoteModel from '../components/EditNoteModel';
 import DeleteNoteModal from '../components/DeleteNoteModal';
 
-import { faThumbtack } from '@fortawesome/free-solid-svg-icons';
+import { faThumbtack, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const NoteDetails = () => {
@@ -84,7 +84,7 @@ const NoteDetails = () => {
 
   return (
     <>
-      <div className='min-h-screen bg-gray-50'>
+      <div className='min-h-screen bg-black/80'>
 
         {/* Header */}
         <header className='border-b border-gray-200 bg-white'>
@@ -94,7 +94,7 @@ const NoteDetails = () => {
             <Link to="/dashboard"
               className='text-sm font-medium text-gray-600 hover:text-gray-900'
             >
-              ← Back to Notes
+              <FontAwesomeIcon icon={faArrowLeft}/>
             </Link>
 
             <div className='flex items-center gap-2'>

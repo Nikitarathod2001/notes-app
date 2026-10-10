@@ -47,7 +47,7 @@ const categories = [
 
 const Sidebar = ({selectedCategory, onCategoryChange}) => {
   return (
-    <aside className='hidden w-64 shrink-0 border-r border-gray-200 bg-white md:block'>
+    <aside className='hidden w-64 shrink-0 border-r border-gray-200 bg-black md:block'>
 
       <div className='p-4'>
 
@@ -59,10 +59,10 @@ const Sidebar = ({selectedCategory, onCategoryChange}) => {
             className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition cursor-pointer ${
               selectedCategory === "All"
               ? "bg-gray-100 text-gray-900"
-              : "text-gray-600 hover:bg-gray-50"
+              : "text-white hover:bg-gray-100 hover:text-gray-900"
             }`}>
 
-            <span className='w-5 text-gray-900'>
+            <span className='w-5'>
               <FontAwesomeIcon icon={faNotesMedical}/>
             </span>
             <span>All Notes</span>
@@ -74,7 +74,7 @@ const Sidebar = ({selectedCategory, onCategoryChange}) => {
             className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition cursor-pointer ${
               selectedCategory === "Pinned"
               ? "bg-gray-100 text-gray-900"
-              : "text-gray-600 hover:bg-gray-50"
+              : "text-white hover:bg-gray-50 hover:text-gray-600"
             }`}>
 
             <span className='w-5 text-red-700'>
@@ -103,7 +103,7 @@ const Sidebar = ({selectedCategory, onCategoryChange}) => {
                   className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition cursor-pointer ${
                     selectedCategory === category.name
                     ? "bg-gray-100 font-medium text-gray-900"
-                    : "text-gray-600 hover:bg-gray-50"
+                    : "text-white hover:bg-gray-50 hover:text-gray-600"
                   }`}
                 >
 
