@@ -103,7 +103,7 @@ const Sidebar = ({selectedCategory, onCategoryChange}) => {
                   className={`flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm transition cursor-pointer ${
                     selectedCategory === category.name
                     ? "bg-gray-100 font-medium text-gray-900"
-                    : "text-gray-600 hover:bg-gray-50"
+                    : "text-gray-600 hover:bg-gray-100"
                   }`}
                 >
 
